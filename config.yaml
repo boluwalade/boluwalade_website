@@ -1,0 +1,60 @@
+baseURL: https://www.boluwalade.com
+languageCode: en-us
+title: My Digital Garden
+theme: hugo-digital-garden-theme
+copyright: Bolu Oluwalade ©
+params:
+  description: Red panda living in the eastern Himalayas.
+  googleAnalytics: ''
+  initials: BO
+  name: Bolu Oluwalade
+  social:
+    - icon: fab fa-twitter
+      link: '#'
+      name: Twitter
+    - icon: fab fa-github
+      link: '#'
+      name: Github
+    - icon: fab fa-medium-m
+      link: '#'
+      name: Medium
+    - icon: fab fa-linkedin-in
+      link: '#'
+      name: LinkedIn
+menu:
+  main:
+    - name: Digital Garden
+      url: /garden/
+      weight: 1
+    - name: Projects
+      url: /projects/
+      weight: 2
+    - name: Library
+      url: /library/
+      weight: 3
+    - name: About
+      url: /about/
+      weight: 4
+    - name: Post
+      url: /post/
+      weight: 5
+
+taxonomies:
+  garden_tags: garden_tags
+  library_tags: library_tags
+  project_tags: project_tags
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    extensions:
+      definitionList: yes
+      footnote: yes
+      linkify: yes
+      strikethrough: yes
+      table: yes
+      taskList: yes
+      typographer: yes
+    renderer:
+      unsafe: yes
+  highlight:
+    style: monokailight
